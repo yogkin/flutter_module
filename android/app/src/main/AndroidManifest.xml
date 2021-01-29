@@ -11,8 +11,8 @@
     <application
         android:networkSecurityConfig="@xml/network_security_config"
         android:name=".MyApp"
-        android:label="Flutter Deer"
-        android:icon="@mipmap/ic_launcher">
+        android:label="flutter demo"
+        android:icon="@mipmap/ic_login_logo">
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
