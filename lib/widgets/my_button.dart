@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_deer/res/resources.dart';
-import 'package:flutter_deer/util/theme_utils.dart';
+import 'package:flutter_module/res/resources.dart';
+import 'package:flutter_module/util/theme_utils.dart';
 
 class MyButton extends StatelessWidget {
 
