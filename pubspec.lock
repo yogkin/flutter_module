@@ -50,6 +50,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "3.0.1"
+  basics:
+    dependency: "direct main"
+    description:
+      name: basics
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.4.0+1"
   boolean_selector:
     dependency: transitive
     description:
@@ -202,15 +209,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_2d_amap:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: "323fcf8"
-      resolved-ref: "323fcf8203d89a4235f923a1b53ae1e455c9afb3"
-      url: "https://github.com/simplezhli/flutter_2d_amap.git"
-    source: git
-    version: "0.1.0"
   flutter_blurhash:
     dependency: transitive
     description:
@@ -565,13 +563,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.4.4"
-  quick_actions:
-    dependency: "direct main"
+  quiver:
+    dependency: transitive
     description:
-      name: quick_actions
+      name: quiver
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.4.0+10"
+    version: "2.1.5"
   rational:
     dependency: transitive
     description:

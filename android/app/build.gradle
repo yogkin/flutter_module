@@ -26,9 +26,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
-def keystorePropertiesFile = rootProject.file("app/key.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdkVersion 29
@@ -38,7 +35,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.weilu.deer"
+        applicationId "com.fumi.flutter_module"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
@@ -47,22 +44,13 @@ android {
     }
 
     signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
+
     }
 
     buildTypes {
-        debug {
-            signingConfig signingConfigs.release
-        }
         release {
             // flutter build apk
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.release
             // https://github.com/flutter/flutter/issues/47462  #48015
             // #58967 gradle 4.0.0
             shrinkResources false

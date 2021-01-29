@@ -9,7 +9,6 @@ import 'package:flutter_module/util/double_tap_back_exit_app.dart';
 import 'package:flutter_module/util/theme_utils.dart';
 import 'package:flutter_module/widgets/load_image.dart';
 import 'package:provider/provider.dart';
-import 'package:quick_actions/quick_actions.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -44,21 +43,7 @@ class _HomeState extends State<Home> {
 
 
   void initQuickActions() {
-    if (Device.isMobile) {
-      final QuickActions quickActions = QuickActions();
-      quickActions.initialize((String shortcutType) async {
-        if (shortcutType == 'demo') {
-          AppNavigator.push(context, DemoPage());
-        }
-      });
 
-      quickActions.setShortcutItems(<ShortcutItem>[
-        const ShortcutItem(
-          type: 'demo',
-          localizedTitle: 'Demo',
-        ),
-      ]);
-    }
   }
 
   void initData() {

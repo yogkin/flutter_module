@@ -7,6 +7,7 @@ import 'package:flutter_module/net/dio_utils.dart';
 import 'package:flutter_module/net/intercept.dart';
 import 'package:flutter_module/routers/routers.dart';
 import 'package:flutter_module/widgets/list_card_view.dart';
+import 'package:oktoast/oktoast.dart';
 
 void main() => runApp(FmApp());
 
@@ -18,12 +19,14 @@ class FmApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'FmFlutterDmeo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return OKToast(
+      child: MaterialApp(
+        title: 'FmFlutterDmeo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: FmHomePage(title: 'Flutter Demo Home Page'),
       ),
-      home: FmHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 
@@ -42,7 +45,7 @@ class FmApp extends StatelessWidget {
     }
 
     /// 适配数据(根据自己的数据结构，可自行选择添加)
-    interceptors.add(AdapterInterceptor());
+    // interceptors.add(AdapterInterceptor());
     configDio(
       baseUrl: 'http://www.wanandroid.com/',
       interceptors: interceptors,

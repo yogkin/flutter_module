@@ -69,12 +69,8 @@ dependencies:
   # 扫码 https://github.com/apptreesoftware/flutter_barcode_reader
   barcode_scan: 3.0.1
   # App Shortcuts https://github.com/flutter/plugins/tree/master/packages/quick_actions
-  quick_actions: 0.4.0+10
-  # 高德2D地图插件 https://github.com/simplezhli/flutter_2d_amap
-  flutter_2d_amap:
-    git:
-      ref: 323fcf8
-      url: https://github.com/simplezhli/flutter_2d_amap.git
+  # https://pub.dev/packages/basics
+  basics: ^0.4.0+1
 
 dev_dependencies:
   # Widget测试
